@@ -64,4 +64,17 @@
 
 ## Usefull links
 
-* [sfsf](https://yandex.ru)
+* [My Jms tryings](./source/)
+* [Building an Application with Spring Boot](https://spring.io/guides/gs/spring-boot/)
+* [Spring Boot Embedded ActiveMQ Configuration Example](https://memorynotfound.com/spring-boot-embedded-activemq-configuration-example/)
+* [Setting and Reading Spring JMS Message Header Properties Example](https://memorynotfound.com/spring-jms-setting-reading-header-properties-example/)
+* [Spring Jms ActiveMQ – How to create a SpringBoot ActiveMQ Response Management application by @SendTo annotation](https://grokonez.com/spring-framework/spring-jms/activemq-create-springboot-activemq-response-management-application-sendto-annotation)
+* [Gson – How to convert Java object to / from JSON](https://mkyong.com/java/how-do-convert-java-object-to-from-json-format-gson-api/)
+* [Spring Boot Jms ActiveMQ Example](https://www.devglan.com/spring-boot/spring-boot-jms-activemq-example)
+* [Spring JMS Example + ActiveMQ + Annotation/ JavaConfig](https://www.devglan.com/spring-mvc/spring-jms-activemq-integration-example)
+* [spring-guides/gs-messaging-jms](https://github.com/spring-guides/gs-messaging-jms)
+* [ibm-messaging/mq-jms-spring](https://github.com/ibm-messaging/mq-jms-spring)
+* [Messaging with JMS](https://spring.io/guides/gs/messaging-jms/)
+* [MQ JMS application development with Spring Boot](https://developer.ibm.com/technologies/java/tutorials/mq-jms-application-development-with-spring-boot/)
+* [Getting Started with Spring JMS](https://www.baeldung.com/spring-jms)
+* [Разработка MQ JMS приложения на Spring Boot](https://habr.com/ru/post/479232/)
