@@ -1,6 +1,10 @@
 # Some notes and memories repo
 The idea is to keep basic notes in one place to have an opportunity for a quick look and use fast
 
+## Markdown
+
+* [Markdown template](./readme-templates/README-template.md)
+
 ## Docker memories
 
 ### Docker basics
