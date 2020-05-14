@@ -16,13 +16,16 @@ hs_err_pid*
 build/
 */build/
 out/
+*/lombok.config
+
+# Maven
+target/
 
 # IntelliJ IDEA
 *.iml
 .idea/
 *.ipr
 *.iws
-out/
 .idea_modules/
 *.hprof
 
@@ -54,4 +57,5 @@ Thumbs.db
 
 # Current project tests
 TEMP/
-logs/
+*logs/
+*.log

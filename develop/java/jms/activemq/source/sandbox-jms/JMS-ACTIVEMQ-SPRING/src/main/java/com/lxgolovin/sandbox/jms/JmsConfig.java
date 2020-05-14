@@ -1,5 +1,6 @@
 package com.lxgolovin.sandbox.jms;
 
+import java.util.Collections;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.annotation.EnableJms;
@@ -15,7 +16,9 @@ public class JmsConfig {
     public MessageConverter jacksonJmsMessageConverter() {
         MappingJackson2MessageConverter converter = new MappingJackson2MessageConverter();
         converter.setTargetType(MessageType.TEXT);
+//        converter.setTypeIdMappings(Collections.singletonMap("email", Email.class));
         converter.setTypeIdPropertyName("_type");
+//        converter.setTypeIdPropertyName("content-type");
         return converter;
     }
 }

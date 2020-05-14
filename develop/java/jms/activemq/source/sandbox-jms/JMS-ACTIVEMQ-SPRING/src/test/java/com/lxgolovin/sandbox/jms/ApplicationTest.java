@@ -16,7 +16,9 @@ import javax.jms.TextMessage;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
@@ -24,14 +26,16 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = { Application.class }, loader = AnnotationConfigContextLoader.class)
-@SpringBootTest
+//@SpringBootTest
+@EnableConfigurationProperties
+@PropertySource("classpath:application.properties")
 public class ApplicationTest {
 
     @Autowired
     JmsTemplate jmsTemplate;
 
     @Test
-    public void testScheduledFixedRateAnnotation() throws JMSException {
+    public void testJacksonConvert() throws JMSException {
         String messageId = UUID.randomUUID().toString();
         Date date = Date.from(LocalDate.now().atTime(LocalTime.NOON).atZone(ZoneId.systemDefault()).toInstant());
         Email email = new Email(date, "Nick", "Alex");
@@ -55,7 +59,7 @@ public class ApplicationTest {
     }
 
     @Test
-    public void test2ScheduledFixedRateAnnotation() {
+    public void testGsonConvert() {
         Date date = Date.from(LocalDate.now().atTime(LocalTime.NOON).atZone(ZoneId.systemDefault()).toInstant());
         Email email = new Email(date, "Nick", "Alex");
         Gson gson = new GsonBuilder().setDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz").create();
