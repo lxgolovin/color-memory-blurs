@@ -1,6 +1,0 @@
-rootProject.name = 'SANDBOX'
-include ':jms-activemq',
-        ':jms-activemq-spring'
-
-project(':jms-activemq').projectDir = file('JMS-ACTIVEMQ')
-project(':jms-activemq-spring').projectDir = file('JMS-ACTIVEMQ-SPRING')
