@@ -44,7 +44,8 @@ The idea is to keep basic notes in one place to have an opportunity for a quick 
 * [3 nodes example](./develop/docker/swarm/swarm-3-nodes.md)
 * [Multiservice on 3 nodes example](./develop/docker/swarm/multiservice-multinode.md)
 * [What is Stack. Basics](./develop/docker/swarm/stacks.md)
-* [Secrets in Swarm](./develop/docker/swarm/secrets.md)
+* [Secrets in Swarm with services](./develop/docker/swarm/secrets-with-services.md)
+* [Secrets in Swarm with Stacks](./develop/docker/swarm/secrets-with-stacks.md)
 
 ## Java memories
 

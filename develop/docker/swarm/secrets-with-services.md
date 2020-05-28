@@ -1,6 +1,6 @@
 # Storing secrets in Swarm
 
-## Secrets
+## Secrets with services
 
 * As of Docker 1.13.0 Swarm Raft DB is encrypted on disk
 * Only stored on disk on Manager nodes
