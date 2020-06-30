@@ -50,6 +50,12 @@ The idea is to keep basic notes in one place to have an opportunity for a quick 
 
 ## Java memories
 
+### Spring memories
+
+#### Spring Boot
+
+* [Spring Boot Admin + Actuator](./develop/java/spring/boot/admin-server-client.md)
+
 ### JMS messaging
 
 #### ActiveMQ
