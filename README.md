@@ -66,3 +66,9 @@ The idea is to keep basic notes in one place to have an opportunity for a quick 
 * [Publish-Subscribe](./develop/java/jms/activemq/publish.md)
 * [Selectors](./develop/java/jms/activemq/selectors.md)
 * [Acknowledgment Modes](./develop/java/jms/activemq/acknowledgment.md)
+
+### NoSQL
+
+#### Elastic Search
+
+* [Basics](./develop/java/nosql/elastic/basics.md)
