@@ -42,3 +42,34 @@ spring.boot.admin.client.url=http://localhost:8888
 ```
 management.endpoints.web.exposure.include=*
 ```
+
+## Security for Server
+
+* add security to gradle
+```
+implementation 'org.springframework.boot:spring-boot-starter-security'
+implementation 'org.springframework.boot:spring-boot-starter-web'
+```
+
+* set username and password
+```
+spring.security.user.name=admin
+spring.security.user.password=admin-password
+```
+
+## Security for Client
+
+* set username and password
+```
+spring.boot.admin.client.username=admin
+spring.boot.admin.client.password=admin-password
+
+#spring.boot.admin.client.instance.metadata.user.name=joe
+#spring.boot.admin.client.instance.metadata.user.password=my-secret-password
+#
+#spring.security.user.name=joe
+#spring.security.user.password=my-secret-password
+```
+
+## Useful links
+* [Guide Spring Boot Admin](https://habr.com/ru/post/479954/)
