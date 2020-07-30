@@ -1,7 +1,5 @@
 package com.lxgolovin.sandbox.jms;
 
-import java.util.Date;
-import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,13 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Email {
+public class Person {
 
-    private Date date;
+    private Integer age;
 
     private String name;
-
-    private String to;
-
-    private List<Person> persons;
 }
