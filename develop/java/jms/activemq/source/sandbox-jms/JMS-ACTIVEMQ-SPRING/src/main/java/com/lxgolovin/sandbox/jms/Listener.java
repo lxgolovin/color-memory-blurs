@@ -1,8 +1,13 @@
 package com.lxgolovin.sandbox.jms;
 
 import com.google.gson.Gson;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import javax.jms.JMSException;
 import javax.jms.TextMessage;
@@ -28,7 +33,21 @@ public class Listener {
     // This is a listener with basic gson
     public Message<Email> receiveMessage(final javax.jms.Message jsonMessage) throws JMSException {
         String messageData = null;
-        Email email = new Email(new Date(), "Nick", "Alex");
+        final Date date = Date.from(
+            LocalDate.now().atTime(LocalTime.NOON).atZone(ZoneId.systemDefault()).toInstant());
+        final List<Person> personList = Arrays.asList(
+            Person.builder().age(10).name("Mike again").build(),
+            Person.builder().age(12).name("Mike1").build(),
+            Person.builder().age(13).name("Mike2").build(),
+            Person.builder().age(14).name("Mike3").build(),
+            Person.builder().age(15).name("Mike4").build()
+        );
+        Email email = Email.builder()
+            .date(date)
+            .name("Nick")
+            .to("Alex")
+            .persons(personList)
+            .build();
         if(jsonMessage instanceof TextMessage) {
             log.info("Text message");
             TextMessage textMessage = (TextMessage)jsonMessage;
