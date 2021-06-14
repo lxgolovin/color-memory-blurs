@@ -1,0 +1,58 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Gradle
+.gradle/
+build/
+*/build/
+out/
+*/lombok.config
+
+# Maven
+target/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+*.ipr
+*.iws
+.idea_modules/
+*.hprof
+
+# Eclipse
+.metadata
+.classpath
+.project
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+
+# OS X
+.DS_Store
+
+# Linux
+# backup files
+*~
+
+# Windows
+# thumbnails
+Thumbs.db
+*.bat
+
+# Current project tests
+TEMP/
+*logs/
+*.log

@@ -28,7 +28,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Listener {
 
-//    @JmsListener(destination = "ACCOUNTS.QUEUE")
+    @JmsListener(destination = "ACCOUNTS.QUEUE")
 //    @SendTo("ACCOUNTS.QUEUE.RESP")
     // This is a listener with basic gson
     public Message<Email> receiveMessage(final javax.jms.Message jsonMessage) throws JMSException {
@@ -74,8 +74,8 @@ public class Listener {
 
 
 
-    @JmsListener(destination = "ACCOUNTS.QUEUE")
-    @SendTo("ACCOUNTS.QUEUE.RESP")
+//    @JmsListener(destination = "ACCOUNTS.QUEUE")
+//    @SendTo("ACCOUNTS.QUEUE.RESP")
     public Message<Email> receiveMessage(@Payload Email email,
         @Header(name = "jms-header-not-exists", defaultValue = "default") String nonExistingHeader,
         @Headers Map<String, Object> headers,

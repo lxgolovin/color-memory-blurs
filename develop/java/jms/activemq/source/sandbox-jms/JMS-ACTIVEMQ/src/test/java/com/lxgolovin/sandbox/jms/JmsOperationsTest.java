@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 
 class JmsOperationsTest {
 
-//    @Test
+    @Test
     void basicSend() throws JMSException {
         String messageText = new Gson().toJson(new Email(LocalDate.now(), "Nick", "Alex"));
 
