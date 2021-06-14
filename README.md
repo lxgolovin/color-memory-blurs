@@ -72,3 +72,9 @@ The idea is to keep basic notes in one place to have an opportunity for a quick 
 #### Elastic Search
 
 * [Basics](./develop/java/nosql/elastic/basics.md)
+
+## Scala memories
+
+### Basic memories
+
+* [Main Scala features](./develop/scala/basics/main.md)
