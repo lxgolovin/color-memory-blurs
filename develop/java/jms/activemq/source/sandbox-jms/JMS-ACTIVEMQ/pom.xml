@@ -16,7 +16,7 @@
     <version.geronimo>1.1.1</version.geronimo>
     <version.activemq>5.7.0</version.activemq>
 
-    <logback.version>1.2.3</logback.version>
+    <logback.version>1.2.13</logback.version>
     <slf4j.version>1.7.5</slf4j.version>
     <lombok.version>1.18.10</lombok.version>
     <junit5.version>5.6.0</junit5.version>
